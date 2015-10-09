@@ -1,0 +1,16 @@
+# control network
+auto eth0
+iface eth0 inet static
+	address 10.0.0.5
+	gateway 10.0.0.1
+	broadcast 10.0.0.255
+	network 10.0.0.0/24
+	dns-nameservers 10.0.0.1 8.8.8.8
+
+# storage network
+auto eth2
+iface eth2 inet static
+	address 10.0.2.5
+	gateway 10.0.2.1
+	broadcast 10.0.2.255
+	network 10.0.2.0/24

@@ -1,0 +1,9 @@
+10.0.0.2	controller
+10.0.0.3	network
+10.0.0.4	compute
+10.0.2.5	compute.storage
+10.0.0.5	block
+10.0.2.5	block.storage
+10.0.0.6	object1
+10.0.2.5	object1.storage
+10.0.0.7	object2

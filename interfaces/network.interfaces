@@ -1,0 +1,21 @@
+# control network
+auto eth0
+iface eth0 inet static
+	address 10.0.0.3
+	gateway 10.0.0.1
+	broadcast 10.0.0.255
+	network 10.0.0.0/24
+    dns-nameservers 10.0.0.1 8.8.8.8
+
+# tunnel network
+auto eth1
+iface eth1 inet static
+	address 10.0.1.3
+	gateway 10.0.1.1
+	broadcast 10.0.1.255
+	network 10.0.1.0/24
+
+#Internet NIC
+auto eth2
+iface eth2 inet dhcp # we don't care what this value is
+
