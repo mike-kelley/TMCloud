@@ -22,10 +22,6 @@ fi
 #generate 21 secure passwords (`` or similar)
 #Populate these passwords in password file
 
-count=$(wc -l identities | cut -d' ' -f1)
-for i in $(seq 1 $count); do
-echo "export $(head -$i identities | tail -1)=$(openssl rand -hex 12)" >> passwords
-done
 
 #sudo cp hosts/$(hostname).hosts  /etc/hosts
 #sudo cp interfaces/$(hostname).interfaces /etc/network/interfaces
